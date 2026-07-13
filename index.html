@@ -56,6 +56,21 @@
       window.appInsights.loadAppInsights();
       window.appInsights.trackPageView();
     </script>
+
+    <!-- GoatCounter (analytics dashboard) — hash-aware so blade/docs routes
+         show as separate pages -->
+    <script>
+      window.goatcounter = {
+        path: function (p) {
+          return location.hash ? p + location.hash : p;
+        },
+      };
+      window.addEventListener('hashchange', function () {
+        if (window.goatcounter.count)
+          window.goatcounter.count({ path: location.pathname + location.hash });
+      });
+    </script>
+    <script data-goatcounter="https://rajparmar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
