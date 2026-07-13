@@ -35,8 +35,9 @@ The downloadable résumé is `public/Raj-Parmar-Resume.pdf`; replace that file t
 
 ## Deploy
 
-Live at **https://black-ground-0b13af510.7.azurestaticapps.net** — an Azure Static
-Web App (`raj-parmar-portfolio`, resource group `rg-portfolio`, Free tier).
+Live at **https://rajparmar.dev** — an Azure Static Web App
+(`raj-parmar-portfolio`, resource group `rg-portfolio`, Free tier) with a custom
+domain and managed TLS.
 
 Pushing to `main` auto-deploys via GitHub Actions
 ([.github/workflows/deploy.yml](.github/workflows/deploy.yml)); the deployment token
