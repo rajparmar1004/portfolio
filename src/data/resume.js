@@ -5,6 +5,7 @@ export const profile = {
   title: 'Cloud Infra & Security Engineer',
   location: 'Adelaide, SA',
   email: 'rajparmar.au@outlook.com',
+  phone: '',
   linkedin: 'https://www.linkedin.com/in/raj-parmar-8a6a6b195/',
   github: 'https://github.com/rajparmar1004',
   resumeFile: '/Raj-Parmar-Resume.pdf',
